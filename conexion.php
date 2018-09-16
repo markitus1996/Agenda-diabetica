@@ -1,9 +1,9 @@
 <?php
 
-const USER = 'qaan853';
-const PASSWORD = 'Malg541g';
-const HOST = '	qaan853.diabetesvirtual.com';
-const DB_NAME = 'qaan853';
+const USER = 'root';
+const PASSWORD = 'root';
+const HOST = '172.17.0.2';
+const DB_NAME = 'glucosa';
 
 global $errores;
 
@@ -59,7 +59,7 @@ function conectar() {
  * @param PDO $conexion
  * @param string $sql
  * @param array $params
- * @return PDOStatement
+ * @return PDOStatement|bool
  */
 function executeQuery($conexion, $sql, $params = null) {
     try {
