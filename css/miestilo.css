@@ -1,0 +1,217 @@
+body {
+    margin:0;
+    font-family:Verdana;
+    background-color: blue;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #008AE4;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #008AE4;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #008AE4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #0240eb;
+  color:white;
+}
+
+.dropdown-content a:hover {
+    background-color: #0240eb;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  #contenedor {
+
+      display: table;
+      width: 333px;
+      text-align: center;
+      margin:40px auto;
+
+
+  }
+  #contenidos {
+      display: table-row;
+
+  }
+  #columna {
+      display: table-cell;
+      border: 2px solid white;
+      vertical-align: middle;
+      padding: 10px;
+       border-radius: 5px;
+       color:white;
+  }
+ .titulomiagenda {
+  margin-top: 5%;
+  text-align: center;
+}
+header {
+padding-top: 23px;
+text-align: center;
+background-color:#008AE4;
+width:100%;
+height: 80px;
+overflow: hidden;
+}
+.divform{
+text-align: center;
+padding-top: 7%;
+}
+.formr {
+
+  padding-top:3%;
+}
+.divform2{
+text-align: center;
+padding-top: 4%;
+}
+.off{
+    float:right;
+    background-color: red;
+
+}
+.derecha {
+
+     float: right;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 70px;
+  border: 6px SOLID white;
+  border-radius: 40px;
+  color: white;
+
+
+}
+p{
+
+    color: white;
+
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+label {
+
+    color:white;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+
+  .contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 70px;
+  border: 6px SOLID white;
+  border-radius: 40px;
+
+
+}
+}
