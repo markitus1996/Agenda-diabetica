@@ -18,11 +18,11 @@ $idUsuario = $_SESSION['usuario']['id'];
 $nombre_usuario = $_SESSION['usuario']['usuario'];
 
 
-$sql = "SELECT DATE_FORMAT (fecha , '%d/%m/%y')AS fecha , manyana,insulinam,comida ,insulinac, merienda ,insuliname, cena  ,insulinace ,insulinalenta , dormir , observaciones FROM glucosa ORDER BY fecha DESC ";
+$sql = "SELECT DATE_FORMAT (fecha , '%d/%m/%y')AS fecha , manyana,insulinam,comida ,insulinac, merienda ,insuliname, cena  ,insulinace ,insulinalenta , dormir , observaciones FROM glucosa WHERE usuario = :usuario ORDER BY fecha DESC ";
 
 $conexion = conectar();
 $result = query($conexion, $sql, [
-    'id_usuario' => $idUsuario
+    'usuario' => $idUsuario
 ]);
 
 ?>
